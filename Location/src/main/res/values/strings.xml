@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bglocationText">This app requires access to your location in Background to function properly. Please manually enable the location permission in the app settings by choosing <b>Allow All The Time</b>.</string>
+
+    <string name="enable_auto_launch_steps">To enable the <b>Auto-launch</b> feature for the <b>Hicare</b> app, please follow these steps:\n
+1. Go to device Settings.\n
+2. Search for <b>Auto-launch apps</b> and select it.\n
+3. In the list of apps, search for the <b>Hicare</b> app.\n
+4. Enable  the <b>"Auto-launch"</b> toggle for <b>Hicare</b>.
+</string>
+    <string name="location_service_lottie_popup_msz_with_arf">Hi there! 👋 We value your privacy and want to provide you with the best experience possible. In order to accurately record your activities throughout the day, We want to let you know that we are accessing your location and activity.
+        Don\'t worry, your data will be securely stored and used solely within the our app.</string>
+    <string name="location_service_lottie_popup_msz">Hi there! 👋 We value your privacy and want to provide you with the best experience possible. In order to accurately record your activities throughout the day, We want to let you know that we are accessing your location.
+        Don\'t worry, your data will be securely stored and used solely within the our app.</string>
+
+    <string name="auto_start_permission_step">Autostart permission is required to launch and run the services of HiCare in the background without requiring manual intervention, Please Allow it for <b>HiCare</b>.</string>
+    <string name="notification_content_WARF">Share your current location. I can see your detected Activity is: %1$s</string>
+    <string name="notification_title_WARF">Location with interval : %1$s</string>
+    <string name="notification_title">Location</string>
+    <string name="notification_content">Share your current location</string>
+
+</resources>

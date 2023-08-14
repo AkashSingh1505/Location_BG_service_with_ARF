@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- styles.xml -->
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Add your app's primary colors, etc. here -->
+    </style>
+
+    <!-- Transparent activity theme -->
+    <!-- styles.xml -->
+    <style name="AppTheme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <!-- Set the window background to transparent -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Make the activity full-screen to cover the entire screen -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- Hide the window title (optional) -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Disable activity animation -->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

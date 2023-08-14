@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!--     Required for 28 and below. -->
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <!--     Required for 29+. -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        >
+        <activity
+            android:name=".PermissionTransparentActivity"
+            android:theme="@style/AppTheme.Transparent"
+            >
+
+        </activity>
+                <service
+                    android:name=".LocationService"
+                    android:exported="true"
+                    android:foregroundServiceType="location" />
+                <receiver
+                    android:name=".ActivityTransitionReceiver"
+                    android:exported="false"
+                    android:permission="com.google.android.gms.permission.ACTIVITY_RECOGNITION">
+                    <intent-filter>
+                        <action android:name="action.TRANSITIONS_DATA" />
+                    </intent-filter>
+                </receiver>
+    </application>
+
+</manifest>
