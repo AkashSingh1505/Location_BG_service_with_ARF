@@ -58,10 +58,6 @@ To use the Location_BG_service_with_Activity_Recognition_Feature library, follow
 
 Refer to the library's documentation for more detailed information on each method and its usage.
 
-## License
-
-This library is provided under the XYZ License. Please refer to the LICENSE file for more details.
-
 ---
 
 We hope this library proves to be a valuable addition to your Android application, enabling efficient background location services and dynamic activity-based location updates. If you have any questions, feedback, or issues, please don't hesitate to contact our support team.
