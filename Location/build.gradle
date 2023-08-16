@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
 }
 
 android {
@@ -49,18 +48,4 @@ dependencies {
 
     //gson to json
     implementation 'com.google.code.gson:gson:2.8.8'
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.AkashSingh1505'
-                artifactId = 'Location_Service_With_ARF'
-                version = '1.0'
-            }
-        }
-    }
 }
