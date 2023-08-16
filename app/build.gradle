@@ -1,16 +1,17 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+
+    id 'kotlin-android'
 }
 
 android {
     namespace 'com.akash.code'
-    compileSdk 33
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.akash.code"
         minSdk 24
-        targetSdk 33
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -48,12 +49,13 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.core:core-ktx:1.5.0'
     implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-    implementation 'androidx.activity:activity-compose:1.5.1'
-    implementation project(path: ':Location')
+    implementation 'androidx.activity:activity-compose:1.3.0'
+//    implementation project(path: ':Location')
     testImplementation 'junit:junit:4.13.2'
+    implementation 'com.github.AkashSingh1505:Location_BG_service_with_ARF:1.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
