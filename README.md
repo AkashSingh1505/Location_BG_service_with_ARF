@@ -49,7 +49,31 @@ The ARF leverages different user activities such as 'Still,' 'Walk,' 'Run,' 'Veh
 
 To use the Location_BG_service_with_Activity_Recognition_Feature library, follow these steps:
 
-1. Include the library in your project.
+1. Include the library in your project by following these steps.
+
+**Step 1: Add JitPack Repository**
+In your project's root `build.gradle` file, add the JitPack repository to the `repositories` section:
+
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+**Step 2: Add the Dependency**
+In your app module's `build.gradle` file, add the dependency for the library:
+
+```gradle
+dependencies {
+    implementation 'com.github.AkashSingh1505:Location_Service_With_ARF:[Tag]'
+}
+```
+
+Replace `[Tag]` with the specific version tag you want to use.
+
 2. Configure the desired settings using the provided methods.
 3. Register the LocationDriver by calling `registerLocationDriver(application: Application)` in your application's file.
 4. Initialize the service by calling `install()` and start it with `startService(context: Context)`.
