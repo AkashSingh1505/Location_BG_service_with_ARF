@@ -68,7 +68,7 @@ In your app module's `build.gradle` file, add the dependency for the library:
 
 ```gradle
 dependencies {
-    implementation 'com.github.AkashSingh1505:Location_Service_With_ARF:[Tag]'
+    implementation 'com.github.AkashSingh1505:Location_BG_service_with_ARF:Tag'
 }
 ```
 
