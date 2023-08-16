@@ -51,12 +51,16 @@ To use the Location_BG_service_with_Activity_Recognition_Feature library, follow
 
 1. Include the library in your project.
 2. Configure the desired settings using the provided methods.
-3. Initialize the service by calling `install()` and start it with `startService(context: Context)`.
-4. Implement the necessary callbacks for location and activity updates using `getLocationCallback()` and `getActivityAndTransactionCallback()`.
-5. Optionally, customize notification icons, content, and other parameters as needed.
-6. Utilize the features provided by the library to enhance your application's background location functionality while optimizing battery efficiency.
+3. Register the LocationDriver by calling `registerLocationDriver(application: Application)` in your application's file.
+4. Initialize the service by calling `install()` and start it with `startService(context: Context)`.
+5. Implement the necessary callbacks for location and activity updates using `getLocationCallback()` and `getActivityAndTransactionCallback()`.
+6. Optionally, customize notification icons, content, and other parameters as needed.
+7. Utilize the features provided by the library to enhance your application's background location functionality while optimizing battery efficiency.
 
 Refer to the library's documentation for more detailed information on each method and its usage.
+
+
+This library is provided by Akash Singh under the AkashSingh1505.
 
 ---
 
