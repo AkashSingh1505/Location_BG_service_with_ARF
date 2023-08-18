@@ -44,20 +44,6 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
-    configurations.all {
-        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
-            if (details.requested.group == 'com.github.AkashSingh1505' &&
-                    details.requested.name == 'Location_BG_service_with_ARF') {
-                if (android.compileSdkVersion == 33) {
-                    // Use the higher SDK version library
-                    details.useVersion '1.0'
-                } else {
-                    // Use a compatible version for SDK 31
-                    details.useVersion '1.0'
-                }
-            }
-        }
-    }
 
 }
 

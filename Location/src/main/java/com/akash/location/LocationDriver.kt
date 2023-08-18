@@ -3,8 +3,11 @@ package com.akash.location
 import android.app.Application
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.util.Log
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import java.time.LocalTime
 
 interface LocationDriverConfigurator {
     fun setStartingTime(h: Int, m: Int, s: Int): LocationDriverConfigurator
@@ -217,13 +220,22 @@ class LocationDriver private constructor(
                 this.Unknown = Unknown
             }
 
+        @RequiresApi(Build.VERSION_CODES.O)
         override fun setStartingTime(h: Int, m: Int, s: Int): LocationDriverConfigurator =
             apply {
                 sHour = h
                 sMinutes = m
                 sSecond = s
                 if(eHour==0){
-                    eHour=sHour+1
+                    if( System.currentTimeMillis()<LocationUtill.timeInMillis(
+                            sHour,sMinutes,sSecond
+                        )){eHour=sHour+1}
+                    else{
+                        val currentTime = LocalTime.now()
+                        val currentHour = currentTime.hour
+                        eHour=currentHour+1
+                    }
+
                 }
             }
 

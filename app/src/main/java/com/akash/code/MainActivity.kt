@@ -16,7 +16,8 @@ class MainActivity : ComponentActivity() {
         var b2 = findViewById<Button>(R.id.button2)
         var b3 = findViewById<Button>(R.id.button3)
         var setup = LocationDriver.withARF()
-            .setStartingTime(2,0,0)
+            .setStartingTime(4,0,0)
+
             .install()
 
 
