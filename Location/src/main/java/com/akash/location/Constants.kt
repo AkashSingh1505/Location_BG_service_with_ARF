@@ -1,6 +1,6 @@
 package com.akash.location
 
-const val TAG = "LOCATION_SERVICE_INFO"
+const val TAG = "LocationDriver"
 
 object Constants {
     val ISARFON = "is_arf_on"

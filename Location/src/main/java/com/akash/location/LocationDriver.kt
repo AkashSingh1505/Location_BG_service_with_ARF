@@ -189,7 +189,7 @@ class LocationDriver private constructor(
         private var sHour: Int = 0
         private var sMinutes: Int = 0
         private var sSecond: Int = 0
-        private var eHour: Int = sHour + 1
+        private var eHour: Int = 0
         private var eMinutes: Int = 0
         private var eSecond: Int = 0
         private var infoDialogLayout: Int = -1
@@ -222,6 +222,9 @@ class LocationDriver private constructor(
                 sHour = h
                 sMinutes = m
                 sSecond = s
+                if(eHour==0){
+                    eHour=sHour+1
+                }
             }
 
         override fun setStopTime(h: Int, m: Int, s: Int): LocationDriverConfigurator =
