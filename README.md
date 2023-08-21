@@ -1,4 +1,4 @@
-# Location_BG_service_with_Activity_Recognition_Feature
+![image](https://github.com/AkashSingh1505/Location_BG_service_with_ARF/assets/139606462/7f6b34d5-e700-4e69-b5b1-7f5123ee307c)
 
 ## About API
 
